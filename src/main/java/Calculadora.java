@@ -1,36 +1,33 @@
 public class Calculadora {
+    private int n1;
+    private int n2;
 
-	private int n1;
-	private int n2;
+    // Constructor por defecto
+    public Calculadora() {
+        this.n1 = 0;
+        this.n2 = 0;
+    }
 
-	/**
-	 * 
-	 * @param num1
-	 * @param num2
-	 */
-	public Calculadora(int num1, int num2) {
-		// TODO - implement Calculadora.Calculadora
-		throw new UnsupportedOperationException();
-	}
+    // Constructor con parámetros
+    public Calculadora(int num1, int num2) {
+        this.n1 = num1;
+        this.n2 = num2;
+    }
 
-	public int multiplicar() {
-		// TODO - implement Calculadora.multiplicar
-		throw new UnsupportedOperationException();
-	}
+    public int sumar() {
+        return this.n1 + this.n2;
+    }
 
-	public int sumar() {
-		// TODO - implement Calculadora.sumar
-		throw new UnsupportedOperationException();
-	}
+    public int multiplicar() {
+        return this.n1 * this.n2;
+    }
 
-	public void setN1() {
-		// TODO - implement Calculadora.setN1
-		throw new UnsupportedOperationException();
-	}
+    // Setters
+    public void setN1(int num1) {
+        this.n1 = num1;
+    }
 
-	public void setN2() {
-		// TODO - implement Calculadora.setN2
-		throw new UnsupportedOperationException();
-	}
-
+    public void setN2(int num2) {
+        this.n2 = num2;
+    }
 }
